@@ -1,0 +1,43 @@
+<html lang="en" dir="ltr">
+    <head>
+        <link rel="stylesheet"type="text/css" href="../css/scramble.css">
+    </head>
+<body>
+  <nav>
+    <h1>Scrambled Words</h1>
+    <div id="contact">
+      <a target="_blank" href="https://github.com/IAmAlexJohnson"><i class="fab fa-github"></i></a>
+      <a target="_blank" href="https://codepen.io/IAmAlexJohnson/"><i class="fab fa-codepen"></i></a>
+      <a target="_blank" href="https://twitter.com/IAmAlexJohnson"><i class="fab fa-twitter"></i></a>
+    </div>
+    <div id="rules">
+      <p class="lead">Unscramble the words.</p>
+      <p>Type in your guess <small>(Enter works)</small>.</p>
+      <p>Get three correct and level up.</p>
+      <p>Get a word wrong three times and restart.</p>
+      <p>Finish level 8 and you win.</p>
+      <p>Good luck!</p>
+      <button id="play-btn">Let's Play</button>
+    </div>
+  </nav>
+
+  <div id="game-container" class="hidden">
+    <p>Level: <span id="level">1</span></p>
+    <p>Score: <span id="score">0</span></p>
+    <p>Attempts: <span id="attempts">0</span></p>
+    <p id="info"></p>
+
+    <div id="guess-container">
+      <p id="scrambled-word"></p>
+
+      <input id="user-guess" type="text" placeholder="Enter your guess">
+      <button id="submit">Submit</button>
+      <button id="reset-btn">Reset</button>
+    </div>
+
+  </div>
+  
+  <script type= "text/javascript"src="../js/scramble.js"></script>
+</body>
+
+</html>
